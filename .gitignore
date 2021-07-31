@@ -1,3 +1,7 @@
+#Ide
+.idea
+*.orig
+
 # Logs
 logs
 *.log
