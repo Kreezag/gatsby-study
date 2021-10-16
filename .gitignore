@@ -1,5 +1,6 @@
 #Ide
-.idea/*
+/.idea
+/.vscode
 *.orig
 
 # Logs
