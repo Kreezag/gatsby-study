@@ -1,5 +1,11 @@
 import React from "react"
+import "react-dom"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  const date = new Date().toUTCString();
+  return <div>
+    Hello world!
+    <br/>
+    {date}
+  </div>
 }
