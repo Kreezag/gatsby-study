@@ -1,11 +1,15 @@
 import React from "react"
 import "react-dom"
+import { Container } from '../components';
 
-export default function Home() {
-  const date = new Date().toUTCString();
-  return <div>
-    Hello world!
-    <br/>
-    {date}
-  </div>
+const IndexPage = () => {
+  return (
+    <Container>
+      <div>
+        Hello world!
+      </div>
+    </Container>
+  )
 }
+
+export default IndexPage
