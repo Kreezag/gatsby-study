@@ -1,12 +1,14 @@
 import React from "react"
 import "react-dom"
-import { Container } from '../components';
+import { Container, Nav } from '../components';
 
 const IndexPage = () => {
   return (
     <Container>
+      <Nav>
+      </Nav>
       <div>
-        Hello world!
+      Hello world!
       </div>
     </Container>
   )

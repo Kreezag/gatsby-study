@@ -1,9 +1,6 @@
-import React from "react"
-import "react-dom"
-import { ContainerWrapper } from "../styles/elements"
+import { Container } from './container'
+import { Nav } from './nav'
 
-const Container = ({ children }) => (
-  <ContainerWrapper>{children}</ContainerWrapper>
-)
 
-export { Container }
+
+export { Container, Nav };
