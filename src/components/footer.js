@@ -47,9 +47,8 @@ const FooterSocialsIcons = styled.div`
     filter: brightness(50%);
   }
 `
-`
 
-const Footer = () => {
+export const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
       facebook: file(relativePath: { eq: "facebook.svg" }) {
@@ -66,7 +65,6 @@ const Footer = () => {
       }
     }
   `)
-  
 
   return (
     <FooterWrapper>
