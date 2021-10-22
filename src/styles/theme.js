@@ -25,7 +25,7 @@ export const Theme = {
   },
   animations: {
     button: "box-shadow 0.25s easy-in-out",
-    ink: "color 0.25s easy",
+    link: "color 0.25s easy",
   },
   shadows: {
     default: "0 5px 25px rgba(30, 30, 31, 0.05)",

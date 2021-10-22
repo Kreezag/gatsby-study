@@ -1,6 +1,6 @@
 import React from "react"
 import "react-dom"
-import { Container, Nav, Footer, CoverImage, Content } from '../components';
+import { Container, Nav, Footer, CoverImage, Content, ContentCard } from '../components';
 
 const IndexPage = () => {
   return (
@@ -8,7 +8,12 @@ const IndexPage = () => {
       <Nav />
       <CoverImage />
       <Content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae delectus eius facere ipsam necessitatibus odio quisquam quod ratione? Corporis dolorum exercitationem facilis inventore ipsum iure laboriosam mollitia quam?
+        <ContentCard
+          date="2021.10.12"
+          title="lorem ipsim bla-bla-bla"
+          slug="/test"
+          excerpt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet at aut consequatur dignissimos dolore, eius illo impedit laborum maxime, minus optio perferendis quis sequi sint sunt, tempore tenetur veniam."
+        />
       </Content>
       
       <Footer />
