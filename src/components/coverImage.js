@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Img, { GatsbyImageSharpFixed } from "gatsby-image"
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 const CoverImageWrapper = styled.div`
