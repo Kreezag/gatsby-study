@@ -6,7 +6,11 @@ export const Theme = {
   colors: {
     main: "hsl(207, 70%, 59%)",
     dark: "hsl(227, 2%, 12%)",
+    dark1: "hsl(227, 2%, 20%)",
+    dark2: "hsl(227, 2%, 35%)",
     light: "hsl(0, 0%, 97%)",
+    light1: "hsl(0, 0%, 80%)",
+    light2: "hsl(0, 0%, 65%)",
   },
   breakpoints: {
     mobile: "only screen and (max-width: 50rem)",

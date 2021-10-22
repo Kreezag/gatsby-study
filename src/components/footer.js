@@ -2,6 +2,7 @@ import React from "react"
 import "react-dom"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { P } from './typography'
 
 const FooterWrapper = styled.div`
   grid-column: 2 / span 12;
@@ -102,7 +103,12 @@ export const Footer = () => {
           </a>
         </FooterSocialsIcons>
         
-        <p>&copy; 2021 Company. All right reserved.</p>
+        <P
+          size='xSmall'
+          color="light2"
+        >
+          &copy; 2021 Company. All right reserved.
+        </P>
       </FooterSocials>
     </FooterWrapper>
   )
