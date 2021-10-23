@@ -1,6 +1,11 @@
 import React from "react"
 import "react-dom"
-import { Container, Nav, Footer, CoverImage, Content, ContentCard } from '../components';
+import { Container } from "../components/container"
+import { Nav } from "../components/nav"
+import { Footer } from "../components/footer"
+import { CoverImage } from "../components/coverImage"
+import { Content } from "../components/content"
+import { ContentCard } from "../components/contentCard"
 
 const IndexPage = () => {
   return (
