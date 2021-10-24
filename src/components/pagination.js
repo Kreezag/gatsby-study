@@ -3,7 +3,7 @@ import "react-dom"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const PaginationWrapper = styled.main`
+const PaginationWrapper = styled.nav`
   grid-column: 2 / span 12;
   padding: 3rem;
   display: flex;
