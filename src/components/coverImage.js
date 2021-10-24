@@ -20,8 +20,11 @@ export const CoverImage = ({ fixed }) => {
       imageSharp(fixed: { originalName: { eq: "office.jpg" } }) {
         fixed {
           base64
-          src
-          srcSet
+          tracedSVG
+          aspectRatio
+          srcWebp
+          srcSetWebp
+          originalName
         }
       }
     }
