@@ -1,19 +1,17 @@
 import React from "react"
-import { graphql } from "gatsby"
-
 import "react-dom"
+import { graphql } from "gatsby"
 import { Container } from "../components/container"
 import { Nav } from "../components/nav"
 import { Footer } from "../components/footer"
 import { CoverImage } from "../components/coverImage"
+import { H1, P } from "../components/typography"
 import { Content } from "../components/content"
 import { ContentCard } from "../components/contentCard"
 import { Pagination } from "../components/pagination"
-import { H1, P } from "../components/typography"
 
-
-const allPosts = ({ context, data }) => {
-  const { currentPage, numPages } = context
+const allPosts = ({ data, pageContext }) => {
+  const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? "/" : `/${currentPage - 1}`
@@ -56,25 +54,25 @@ const allPosts = ({ context, data }) => {
   )
 }
 
-export const pageQuery = graphql`
-    query allPostsQuery ($skip: Int!, $limit: Int!) {
-        allMdx(
-            sort: { fields: frontmatter___date, order: DESC }
-            skip: $skip
-            limit: $limit
-        ) {
-            edges {
-                node {
-                    frontmatter {
-                        date
-                        excerpt
-                        slug
-                        title
-                    }
-                }
-            }
-        }
-    }
-`
+export default allPosts
 
-export default allPosts;
+export const AllPostsQuery = graphql`
+  query($skip: Int!, $limit: Int!) {
+    allMdx(
+      sort: { fields: frontmatter___date, order: DESC }
+      skip: $skip
+      limit: $limit
+    ) {
+      edges {
+        node {
+          frontmatter {
+            date
+            excerpt
+            slug
+            title
+          }
+        }
+      }
+    }
+  }
+`
