@@ -3,8 +3,6 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import "react-dom"
 import { Container } from "../components/container"
-import { Nav } from "../components/nav"
-import { Footer } from "../components/footer"
 import { CoverImage } from "../components/coverImage"
 import { Post } from "../components/post"
 import { H1 } from "../components/typography"
@@ -15,7 +13,6 @@ const SinglePost = ({ data }) => {
 
   return (
     <Container>
-      <Nav />
       <CoverImage fixed={featureImage} />
       <Post>
         <H1 textAlign="center" margin="0 0 2rem 0">
@@ -25,7 +22,6 @@ const SinglePost = ({ data }) => {
           {data.mdx.body}
         </MDXRenderer>
       </Post>
-      <Footer />
     </Container>
   )
 }

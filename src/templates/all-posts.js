@@ -2,8 +2,6 @@ import React from "react"
 import "react-dom"
 import { graphql } from "gatsby"
 import { Container } from "../components/container"
-import { Nav } from "../components/nav"
-import { Footer } from "../components/footer"
 import { CoverImage } from "../components/coverImage"
 import { H1, P } from "../components/typography"
 import { Content } from "../components/content"
@@ -21,7 +19,6 @@ const allPosts = ({ data, pageContext }) => {
 
   return (
     <Container>
-      <Nav />
       <CoverImage />
       <Content>
         <H1 textAlign="center" margin="0 0 1rem 0">
@@ -49,7 +46,6 @@ const allPosts = ({ data, pageContext }) => {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-      <Footer />
     </Container>
   )
 }
