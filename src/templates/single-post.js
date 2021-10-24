@@ -10,7 +10,7 @@ import { Post } from "../components/post"
 import { H1 } from "../components/typography"
 
 
-const singlePost = ({ data }) => {
+const SinglePost = ({ data }) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fixed
 
   return (
@@ -21,17 +21,16 @@ const singlePost = ({ data }) => {
         <H1 textAlign="center" margin="0 0 2rem 0">
           {data.mdx.frontmatter.title}
         </H1>
-        <code style={{ whiteSpace: 'pre-wrap' }}>
-          {JSON.stringify(data)}
-        </code>
-        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        <MDXRenderer>
+          {data.mdx.body}
+        </MDXRenderer>
       </Post>
       <Footer />
     </Container>
   )
 }
 
-export default singlePost;
+export default SinglePost;
 
 export const postQuery = graphql`
     query SinglePostQuery ($id: String!) {
