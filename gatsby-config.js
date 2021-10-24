@@ -1,5 +1,13 @@
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Test gatsby blog",
+    description: "test project for gatsby study",
+    url: "https://github.com/Kreezag",
+    image: "/office.jpg",
+    githubUsername: "Kreezag",
+    author: "Kreezag",
+  },
   plugins: [
     {
       resolve: "gatsby-source-filesystem",

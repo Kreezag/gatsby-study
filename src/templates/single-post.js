@@ -6,6 +6,7 @@ import { Container } from "../components/container"
 import { CoverImage } from "../components/coverImage"
 import { Post } from "../components/post"
 import { H1 } from "../components/typography"
+import { Seo } from "../components/seo"
 
 
 const SinglePost = ({ data }) => {
@@ -13,6 +14,11 @@ const SinglePost = ({ data }) => {
 
   return (
     <Container>
+      <Seo
+        title={data.mdx.frontmatter.title}
+        description={data.mdx.frontmatter.excerpt}
+        image={data.mdx.frontmatter.featureImage.publicURL}
+      />
       <CoverImage fixed={featureImage} />
       <Post>
         <H1 textAlign="center" margin="0 0 2rem 0">
@@ -38,6 +44,7 @@ export const postQuery = graphql`
                 slug
                 title
                 featureImage {
+                    publicURL
                     childImageSharp {
                         fixed {
                             base64

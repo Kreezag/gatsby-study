@@ -7,6 +7,7 @@ import { H1, P } from "../components/typography"
 import { Content } from "../components/content"
 import { ContentCard } from "../components/contentCard"
 import { Pagination } from "../components/pagination"
+import { Seo } from "../components/seo"
 
 const allPosts = ({ data, pageContext }) => {
   const { currentPage, numPages } = pageContext
@@ -19,6 +20,7 @@ const allPosts = ({ data, pageContext }) => {
 
   return (
     <Container>
+      <Seo />
       <CoverImage />
       <Content>
         <H1 textAlign="center" margin="0 0 1rem 0">
