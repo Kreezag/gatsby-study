@@ -56,7 +56,7 @@ const allPosts = ({ data, pageContext }) => {
 
 export default allPosts
 
-export const AllPostsQuery = graphql`
+export const allPostsQuery = graphql`
   query($skip: Int!, $limit: Int!) {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }

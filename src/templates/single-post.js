@@ -33,7 +33,7 @@ const singlePost = ({ data }) => {
 
 export default singlePost;
 
-export const pageQuery = graphql`
+export const postQuery = graphql`
     query SinglePostQuery ($id: String!) {
         mdx(id: { eq: $id }) {
             body
