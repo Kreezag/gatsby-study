@@ -64,7 +64,7 @@ export const allPostsQuery = graphql`
       edges {
         node {
           frontmatter {
-            date
+            date(formatString: "MMMM DD, YYYY")
             excerpt
             slug
             title
