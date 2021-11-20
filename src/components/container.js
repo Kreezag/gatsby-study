@@ -24,7 +24,9 @@ const ContainerWrapper = styled.div`
 export const Container = ({ children }) => (
   <ContainerWrapper>
     <Nav />
-      {children}
+    
+    {children}
+    
     <Footer />
   </ContainerWrapper>
 )

@@ -46,10 +46,17 @@ const PaginationItem = styled(props => <Link {...props} />)`
 
 export const Pagination = ({ isFirst, isLast, prevPage, nextPage }) => {
   return (
-    <PaginationWrapper isFirst={isFirst} isLast={isLast}>
-      <PaginationItem to={prevPage}>Previous Page</PaginationItem>
+    <PaginationWrapper
+      isFirst={isFirst}
+      isLast={isLast}
+    >
+      <PaginationItem to={prevPage}>
+        Previous Page
+      </PaginationItem>
 
-      <PaginationItem to={nextPage}>Next Page</PaginationItem>
+      <PaginationItem to={nextPage}>
+        Next Page
+      </PaginationItem>
     </PaginationWrapper>
   )
 }
