@@ -7,7 +7,7 @@ export const Theme = {
     main: "hsl(207, 70%, 59%)",
     dark: "hsl(227, 2%, 12%)",
     dark1: "hsl(227, 2%, 20%)",
-    dark2: "hsl(227, 2%, 35%)",
+    dark2: "hsl(127, 2%, 50%)",
     light: "hsl(0, 0%, 97%)",
     light1: "hsl(0, 0%, 80%)",
     light2: "hsl(0, 0%, 65%)",
