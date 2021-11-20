@@ -24,6 +24,10 @@ const PaginationWrapper = styled.nav`
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
   }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    grid-column: 1 / span 8;
+  }
 `
 
 const PaginationItem = styled(props => <Link {...props} />)`
